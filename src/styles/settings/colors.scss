@@ -1,0 +1,48 @@
+//********************/
+// COLORS
+//
+$color-1: #e9592d; // needed
+$color-2: #324769; // needed
+$color-3: #ce9453;
+
+$color-primary: $color-1; // needed
+$color-secondary: $color-2; // needed
+$color-secondary-light: #d0d9e8;
+$color-tertiary: $color-3; // needed
+
+$color-dark: #262b26;
+$color-black: #000; // needed
+$color-white: #fff; // needed
+$color-grey: #58585a; // needed
+$color-grey-dark: #353535; // needed body
+$color-grey-darker: #262523; // footer
+$color-grey-light: #f5f5f5;
+
+$color-error: #a94442; // needed error messages
+$color-success: green; // needed success messages
+
+// TEXT COLORS
+$color-text-base: $color-grey-darker; // Mettre la couleur
+$color-text-punch: $color-secondary; // Mettre la couleur
+$color-text-contrast: $color-white; // Mettre la couleur
+$color-text-gris: $color-grey;
+
+$color-text-base-light: lighten($color-text-base, 20%);
+$color-text-punch-light: lighten($color-text-punch, 20%);
+$color-text-contrast-light: lighten($color-text-contrast, 20%);
+$color-text-base-dark: darken($color-text-base, 20%);
+$color-text-punch-dark: darken($color-text-punch, 20%);
+$color-text-contrast-dark: darken($color-text-contrast, 20%);
+
+// BACKGROUNDS COLORS
+$bg-color-body: $color-white; // needed
+$bg-color-nav: rgba(0, 0, 0, 0.4); // needed
+$bg-color-nav-filled: rgba(0, 0, 0, 1); // needed
+$bg-color-nav-logo: $bg-color-nav; // needed
+$bg-color-nav-highlight: $color-secondary; // needed
+
+$bg-color-black: $color-black; // needed
+$bg-color-transparent: rgba(0, 0, 0, 0.4);
+$bg-color-footer: $color-grey-darker; // needed
+$bg-color-primary: darken($color-1, 0.1); // needed
+$bg-color-secondary: darken($color-2, 0.1); // needed

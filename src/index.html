@@ -1,0 +1,536 @@
+<!-- HEADER -->
+
+{% include "_partials/_header.html" with {title: 'App Location'} %}
+
+<!-- Sections -->
+
+<section class="section-location-form">
+    <div class="wrapper">
+        <div class="container">
+            <div class="module-formulaire">
+
+            <form action="" autocomplete="on" role="form" class="form">
+
+                <section class="input-section">
+                    <div class="tab">
+                        <nav class="top-nav">
+                            <div class="btn-wrapper">
+                                <a class="btn secondary back" href="./"><img
+                                        src="assets/icons/icon_arrow_back.svg" alt="">Retour</a>
+                            </div>
+                            <div class="btn-wrapper">
+                                <a href="#" target="_blank" class="btn secondary">
+                                    <img src="assets/icons/icon_arrow_forward.svg" alt="">
+                                    <div class="text">Voir les templates</div>
+                                </a>
+                            </div>
+                        </nav>
+                        <div class="content">
+                            <h1>Votre site web</h1>
+                            
+                            <div class="packages">
+
+                                <div class="card double-shadow">
+                                    <div class="card__title">
+                                        <div class="titles">
+                                            <h3>Départ</h3><div class="tag">Tarifs 2024</div>
+                                        </div>
+                                        <div class="price">230$/mois</div>
+                                    </div>
+                                    <div class="card__content">
+                                        <p>Ce montant inclut 3 heures de mises à jour et de modifications par année, comptabilisé par tranches de 10 minutes minimum.</p>
+                                        <ul>
+                                            <li><img src="assets/icons/icon_checkmark.svg" alt="">Hébergement</li>
+                                            <li><img src="assets/icons/icon_checkmark.svg" alt="">Accueil</li>
+                                            <li><img src="assets/icons/icon_checkmark.svg" alt="">Page produits / services</li>
+                                            <li><img src="assets/icons/icon_checkmark.svg" alt="">Rendez-vous</li>
+                                            <li><img src="assets/icons/icon_checkmark.svg" alt="">Coordonnées</li>
+                                            <li><img src="assets/icons/icon_checkmark.svg" alt="">SEO de base</li>
+                                        </ul>
+                                    </div>
+                                    <div class="btn-wrapper">
+                                        <div class="btn check">
+                                            <input id="package_starter"
+                                                name="package" type="radio" class="pack" value="230">
+                                            <div class="bg-checkmark"></div>
+                                            <label class="text" for="package_starter">je choisis</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card double-shadow">
+                                    <div class="card__title">
+                                        <div class="titles">
+                                            <h3>Populaire</h3><div class="tag">Tarifs 2024</div>
+                                        </div>
+                                        <div class="price">415$/Mois</div>
+                                    </div>
+                                    <div class="card__content">
+                                        <p>Ce montant inclut 4 heures de mises à jour et de modifications par année, comptabilisé par tranches de 10 minutes minimum.</p>
+                                        <ul>
+                                            <li><img src="assets/icons/icon_checkmark.svg" alt="">Hébergement</li>
+                                            <li><img src="assets/icons/icon_checkmark.svg" alt="">Accueil</li>
+                                            <li><img src="assets/icons/icon_checkmark.svg" alt="">Page produits / services</li>
+                                            <li><img src="assets/icons/icon_checkmark.svg" alt="">Rendez-vous</li>
+                                            <li><img src="assets/icons/icon_checkmark.svg" alt="">Coordonnées</li>
+                                            <li><img src="assets/icons/icon_checkmark.svg" alt="">Gestion des contenus</li>
+                                            <li><img src="assets/icons/icon_checkmark.svg" alt="">Séance photos/vidéos</li>
+                                            <li><img src="assets/icons/icon_checkmark.svg" alt="">Langue supplémentaire</li>
+                                            <li><img src="assets/icons/icon_checkmark.svg" alt="">SEO de base</li>
+                                            <li><img src="assets/icons/icon_checkmark.svg" alt="">Gestion google my business</li>
+                                        </ul>
+                                    </div>
+                                    <div class="btn-wrapper">
+                                        <div class="btn check">
+                                            <input id="package_popular"
+                                                name="package" type="radio" class="pack gmb" value="415">
+                                            <div class="bg-checkmark"></div>
+                                            <label class="text" for="package_popular">je choisis</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card double-shadow">
+                                    <div class="card__title">
+                                        <div class="titles">
+                                            <h3>Expert</h3><div class="tag">Tarifs 2024</div>
+                                        </div>
+                                        <div class="price">600$/Mois</div>
+                                    </div>
+                                    <div class="card__content">
+                                        <p>Ce montant inclut 5 heures de mises à jour et de modifications par année, comptabilisé par tranches de 10 minutes minimum.</p>
+                                        <ul>
+                                            <li><img src="assets/icons/icon_checkmark.svg" alt="">Hébergement</li>
+                                            <li><img src="assets/icons/icon_checkmark.svg" alt="">Accueil</li>
+                                            <li><img src="assets/icons/icon_checkmark.svg" alt="">Page produits / services</li>
+                                            <li><img src="assets/icons/icon_checkmark.svg" alt="">Rendez-vous</li>
+                                            <li><img src="assets/icons/icon_checkmark.svg" alt="">Coordonnées</li>
+                                            <li><img src="assets/icons/icon_checkmark.svg" alt="">Page spécialités</li>
+                                            <li><img src="assets/icons/icon_checkmark.svg" alt="">Gestion des contenus</li>
+                                            <li><img src="assets/icons/icon_checkmark.svg" alt="">Séance photos/vidéos</li>
+                                            <li><img src="assets/icons/icon_checkmark.svg" alt="">Langue supplémentaire</li>
+                                            <li><img src="assets/icons/icon_checkmark.svg" alt="">Gestion google my business</li>
+                                            <li><img src="assets/icons/icon_checkmark.svg" alt="">SEO Pro: 3 combinaisons</li>
+                                        </ul>
+                                    </div>
+                                    <div class="btn-wrapper">
+                                        <div class="btn check">
+                                            <input id="package_expert"
+                                                name="package" type="radio" class="pack gmb" value="600">
+                                            <div class="bg-checkmark"></div>
+                                            <label class="text" for="package_expert">je choisis</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="extra">
+                            <h1>En supplément</h1>
+                            <div class="form-group check-group">
+                                                
+                                <div class="check-container">
+                                    <input id="extra_photo"
+                                        name="extra" type="checkbox" class="form-control fix" value="150">
+                                    <label class="control-label" for="extra_photo"><span></span>Photos (40):</label>
+                                    <div class="spacer"></div>
+                                    <p class="price-info">150$/1fois</p>
+                                </div>
+
+                                <div class="check-container">
+                                    <input id="extra_photo-drone" name="extra"
+                                        type="checkbox" class="form-control fix" value="775">
+                                    <label class="control-label" for="extra_photo-drone"><span></span>Photos (40) (avec drone):</label>
+                                    <div class="spacer"></div>
+                                    <p class="price-info">775$/1fois</p>
+                                </div>
+
+                                <div class="check-container">
+                                    <input id="extra_photo-video" name="extra"
+                                        type="checkbox" class="form-control fix" value="475">
+                                    <label class="control-label" for="extra_photo-video"><span></span>Photos (40) et vidéos (3):</label>
+                                    <div class="spacer"></div>
+                                    <p class="price-info">475$/1fois</p>                     
+                                </div>
+
+                                <div class="check-container">
+                                    <input id="extra_photo-video-drone" name="extra"
+                                        type="checkbox" class="form-control fix" value="1095">
+                                    <label class="control-label" for="extra_photo-video-drone"><span></span>Photos (40) et vidéos (3) (avec drone):</label>
+                                    <div class="spacer"></div>
+                                    <p class="price-info">1095$/1fois</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn-wrapper bottom-nav">
+                            <a class="btn next-tab">
+                                <img src="assets/icons/icon_arrow_forward.svg" alt="">
+                                <div class="text">Services supplémentaires</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="tab">
+                        <nav class="top-nav">
+                            <div class="btn-wrapper">
+                                <a class="btn prev-tab secondary back"><img
+                                        src="assets/icons/icon_arrow_back.svg" alt="">Retour</a>
+                            </div>
+                            <div class="btn-wrapper">
+                                <a href="#" target="_blank" class="btn secondary">
+                                    <img src="assets/icons/icon_arrow_forward.svg" alt="">
+                                    <div class="text">Voir les templates</div>
+                                </a>
+                            </div>
+                        </nav>
+                        <div class="content">
+                            <h1>Forfaits à la carte</h1>
+                            <div class="title_wrapper vert">                            
+                                <h4>Mensualités par service offert</h4>
+                                <div class="tag red">Tarifs 2024</div>
+                            </div>
+
+                            <h3 class="section">Vidéos supplémentaires</h3>
+
+                            <div class="form-group check-group">                      
+                                                
+                                <div class="quantity-group">
+                                    <div class="check-container">
+                                        <input id="extra-videos_without-drone"
+                                            name="extra-videos" type="checkbox" class="form-control number" value="without-drone">
+                                        <label class="control-label" for="extra-videos_without-drone"><span></span>Vidéos supplémentaires ( 5 à 7 secondes):</label>
+                                        <div class="spacer"></div>
+                                        <p class="price-info">sans drone/105$-ch</p>
+                                    </div>
+            
+                                    <div class="number-field">
+                                        <label class="control-label" for="vid-without-drone">Nombre de vidéos:</label>
+                                        <input data-bought="105" id="vid-without-drone"
+                                            name="vid-without-drone" type="number" min="0" max="10" value="0" class="form-control">
+                                        <div class="spacer"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="quantity-group">
+                                    <div class="check-container">
+                                        <input id="extra-videos_with-drone"
+                                            name="extra-videos" type="checkbox" class="form-control number" value="with-drone">
+                                        <label class="control-label" for="extra-videos_with-drone"><span></span>Vidéos supplémentaires ( 5 à 7 secondes):</label>
+                                        <div class="spacer"></div>
+                                        <p class="price-info">avec drone/185$-ch</p>
+                                    </div>
+            
+                                    <div class="number-field">
+                                        <label class="control-label" for="vid-with-drone">Nombre de vidéos:</label>
+                                        <input data-bought="185" id="vid-with-drone"
+                                            name="vid-with-drone" type="number" min="0" max="10" value="0" class="form-control">
+                                        <div class="spacer"></div>
+                                    </div>
+                                </div> 
+                            </div>
+
+                            <h3 class="section">Pages supplémentaires</h3>
+
+                            <div class="form-group check-group">                        
+                                                
+                                <div class="quantity-group">
+                                    <div class="check-container">
+                                        <input id="extra-pages_one"
+                                            name="extra-pages" type="checkbox" class="form-control number" value="one">
+                                        <label class="control-label" for="extra-pages_one"><span></span>Page(s) ajoutée(s) à votre site:</label>
+                                        <div class="spacer"></div>
+                                        <p class="price-info">50$/mois</p>
+                                    </div>
+            
+                                    <div class="number-field">
+                                        <label class="control-label" for="one">Nombre de page(s) supplémentaire(s):</label>
+                                        <input data-location="50" id="one"
+                                            name="one" type="number" min="0" max="30" value="0" class="form-control">
+                                        <div class="spacer"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="check-container">
+                                    <input id="extra-pages_inventory"
+                                        name="extra-pages" type="checkbox" class="form-control location" value="100">
+                                    <label class="control-label" for="extra-pages_inventory"><span></span>Page inventaire et gestion:</label>
+                                    <div class="spacer"></div>
+                                    <p class="price-info">100$/mois</p>
+                                </div>
+            
+                                <div class="check-container">
+                                    <input id="extra-pages_career"
+                                        name="extra-pages" type="checkbox" class="form-control location" value="55">
+                                    <label class="control-label" for="extra-pages_career"><span></span>Page emploi:</label>
+                                    <div class="spacer"></div>
+                                    <p class="price-info">55$/mois</p>
+                                </div> 
+                            </div>                                           
+                        
+
+                            <h3 class="section">Texte</h3>
+
+                            <div class="form-group check-group">
+                                <div class="check-container">
+                                    <input id="text_traduction"
+                                        name="text" type="checkbox" class="form-control fix" value="400">
+                                    <label class="control-label" for="text_traduction"><span></span>Traduction (800 mots ajustable selon le site):</label>
+                                    <div class="spacer"></div>
+                                    <p class="price-info">400$/1fois</p>
+                                </div>
+                            </div>
+
+                            <h3 class="section">Google</h3>
+
+                            <div class="form-group check-group">
+
+                                <div class="check-container">
+                                    <input id="google_manage-6"
+                                        name="google" type="checkbox" class="form-control location" value="55">
+                                    <label class="control-label" for="google_manage-6"><span></span>Gestion des contenus suppl.(6 heures/année tranchent de 10 min.):</label>
+                                    <div class="spacer"></div>
+                                    <p class="price-info">55$/mois</p>
+                                </div>
+
+                                <div class="check-container">
+                                    <input id="google_ratings"
+                                        name="google" type="checkbox" class="form-control location" value="105">
+                                    <label class="control-label" for="google_ratings"><span></span>Rating google my business accueil:</label>
+                                    <div class="spacer"></div>
+                                    <p class="price-info">105$/mois</p>
+                                </div>
+
+                                <div class="check-container">
+                                    <input id="google_gmb"
+                                        name="google" type="checkbox" class="form-control location gmb" value="105">
+                                    <label class="control-label" for="google_gmb"><span></span>Gestion GMB:</label>
+                                    <div class="spacer"></div>
+                                    <p class="price-info">105$/mois</p>
+                                </div>
+                            </div>
+
+                            <h3 class="section">SEO</h3>
+
+                            <div class="form-group check-group">
+
+                                <div class="check-container">
+                                    <input id="seo_pro"
+                                        name="seo" type="checkbox" class="form-control location seo pro" value="105">
+                                    <label class="control-label" for="seo_pro"><span></span>SEO Pro 2 expressions ou 2 villes/régions (en supplément du SEO de base):</label>
+                                    <div class="spacer"></div>
+                                    <p class="price-info">105$/mois</p>
+                                </div>
+
+                                <div class="quantity-group">
+                                    <div class="check-container">
+                                            <input id="seo_one"
+                                                name="seo" type="checkbox" class="form-control number seo" value="50">
+                                            <label class="control-label" for="seo_one"><span></span>SEO suplémentaire par combinaison:</label>
+                                            <div class="spacer"></div>
+                                            <p class="price-info">50$/mois</p>
+                                        </div>
+                
+                                        <div class="number-field">
+                                            <label class="control-label" for="one">Nombre de combinaison(s) supplémentaire(s):</label>
+                                            <input data-seo="50" id="one"
+                                                name="one" type="number" min="0" max="30" value="0" class="form-control seo">
+                                            <div class="spacer"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h3 class="section small">Tournage et lieu/jour supplémentaire</h3>
+                            <div class="title_wrapper">                            
+                                <h5>Tournage supplémentaires jour ou lieu: 20% de rabais sur les prix de la première visite. <br> Exemple: 1375$ (1ère visite) - 25% = 1100$. Total: 2475$</h5>
+                            </div>
+
+                            <div class="form-group check-group"> 
+                                <div class="quantity-group">
+                                    <div class="check-container">
+                                        <input id="more_place"
+                                            name="more" type="checkbox" class="form-control number place">
+                                        <label class="control-label" for="more_place"><span></span>Lieu de tournage:</label>
+                                        <div class="spacer"></div>
+                                        <p class="price-info">1375$/1fois</p>
+                                    </div>
+            
+                                    <div class="number-field">
+                                        <label class="control-label" for="one">Nombre de lieu/jour supplémentaire supplémentaire(s):</label>
+                                        <input data-bought="1375" id="one"
+                                            name="one" type="number" min="0" max="10" value="0" class="form-control place">
+                                        <div class="spacer"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="title_wrapper">
+                                <h4>*Les paiements mensuels qui suivront le 48ième mois seront indexés au coût de la vie cumulatif des quatre années précédant la mise à jour du site.</h4>
+                            </div>
+
+                            <div class="btn-wrapper bottom-nav">
+                                <a class="btn next-tab">
+                                    <img src="assets/icons/icon_arrow_forward.svg" alt="">
+                                    <div class="text">Calculer le prix final</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab">
+                        <nav class="top-nav">
+                            <div class="btn-wrapper">
+                                <a class="btn prev-tab secondary back"><img src="assets/icons/icon_arrow_back.svg" alt="">Retour</a>
+                            </div>
+                            <div class="btn-wrapper">
+                                <a href="#" target="_blank"
+                                    class="btn secondary">
+                                    <img src="assets/icons/icon_arrow_forward.svg" alt="">
+                                    <div class="text">Voir les templates</div>
+                                </a>
+                            </div>
+                        </nav>
+                        <div class="content">
+                            <h1>Votre prix final</h1>
+                            <div class="title_wrapper vert">
+                                <h4>Voici votre devis gratuit, ceci est une estimation.</h4>
+                                <div class="tag red">Tarifs 2024</div>
+                            </div>
+                            <div class="estimation-infos">
+                                <div class="titles">
+                                    <h1 class="main-title">Forfaits</h1>
+                                    <h1 class="main-title">Service</h1>
+                                    <h1 class="main-title price_title">Prix</h1>
+                                </div>
+                                <div class="row starter package-details">
+                                    <div class="package">
+                                        <h1>Départ</h1>
+                                        <a class="change-package">Changer</a>
+                                    </div>
+                                    <p class="service">Hébergement, Accueil, Page produits / services, Rendez-vous, Coordonnées, SEO de base</p>
+                                    <div class="price">230$/mois</div>
+                                </div>
+                                <div class="row popular package-details">
+                                    <div class="package">
+                                        <h1>Populaire</h1>
+                                        <a class="change-package">Changer</a>
+                                    </div>
+                                    <p class="service">Hébergement, Accueil, Page produits / services, Rendez-vous, Coordonnées,
+                                        Gestion des
+                                        contenus, Séance photos/vidéos, Langue supplémentaire, SEO de base, Gestion google my
+                                        business</p>
+                                    <div class="price">415$/mois</div> 
+                                </div>
+                                <div class="row expert package-details">
+                                    <div class="package">
+                                        <h1>Expert</h1>
+                                        <a class="change-package">Changer</a>
+                                    </div>
+                                    <p class="service">Hébergement, Accueil, Page produits / services, Rendez-vous, Coordonnées,
+                                        Gestion des
+                                        contenus, Séance photos/vidéos, Langue supplémentaire, Gestion google my
+                                        business, SEO Pro:3 combinaisons</p>
+                                    <div class="price">600$/mois</div>
+                                </div>
+                                <div class="row no-border">
+                                    <div class="a-la-carte">
+                                        <h1>À la carte</h1>
+                                        <a class="modify">Modifier</a>
+                                    </div>
+                                </div>
+                                <div class="rows-container">
+                                    
+                                </div>
+                                <div class="row additionnal">
+                                    <div class="option">
+                                        <img src="assets/icons/icon_check_selected.svg" alt="">
+                                        <div class="option-name"></div>
+                                    </div>
+                                    <p class="service"></p>
+                                    <div class="price"></div>
+                                </div>
+                                <div class="row place">
+                                    <div class="option">
+                                        <img src="assets/icons/icon_check_selected.svg" alt="">
+                                        <div class="option-name">Lieu de tournage(s) supplémentaire(s)</div>
+                                    </div>
+                                    <p class="service">1375$-ch/1100$-ch pour 2 et +</p>
+                                    <div class="price place-price"></div>
+                                </div>
+                                <div class="row lancement">
+                                    <div class="lancement">
+                                        <h1>Frais de lancement</h1>
+                                    </div>
+                                    <p class="service">Analyse des besoins Rédaction des textes, Choix des photos et positionnements</p>
+                                    <div class="price">900$</div>
+                                </div>
+                                <div class="row no-border">
+                                    <div class="discount_title">
+                                        <h1>*Rabais</h1>
+                                    </div>
+                                </div>
+                                <div class="row discount">
+                                    <div class="form-group radio-group">
+                                                        
+                                        <div class="quantity-group discount">
+                                            <div class="radio-container">
+
+                                                <input id="discount_new"
+                                                    name="discount" type="radio" class="form-control radio-custom discount new" value="">
+                                                <label class="control-label" for="discount_new"><span></span></label>
+                                                <p>Rabais nouveau client (%)</p>
+                                            </div>
+
+                                            <div class="number-field">
+                                                <label class="control-label" for="new">Rabais appliqué:</label>
+                                                <input id="new"
+                                                    name="new" type="number" min="0" max="10" value="0" class="form-control new">                                       
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="radio-container">
+                                            <input id="discount_old"
+                                                name="discount" type="radio" class="form-control radio-custom discount old" value="15">
+                                            <label class="control-label" for="discount_old"><span></span></label>
+                                            <p>Rabais de 15% sur le SEO pour ancien client</p>
+                                        </div>
+                                    </div>
+                                    <p class="service"></p>
+                                    <div class="price discount-price">0</div>
+                                </div>
+                                <div class="row no-border">
+                                    <h1>Montant fixe</h1>
+                                    <p class="service"></p>
+                                    <div class="bought">
+                                        <div class="value price">0</div>
+                                    </div>
+                                </div>
+                                <div class="row total">
+                                    <h1>Total</h1>
+                                    <p class="service"></p>
+                                    <div class="grand-total price">
+                                        <div class="value">0</div>
+                                    </div>
+                                </div>
+                                <div class="row no-border">
+                                    <h1>Mensualité à venir</h1>
+                                    <p class="service"></p>
+                                    <div class="location price">
+                                        <div class="value">0</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn-wrapper bottom-nav">
+                            <div class="btn-submit">
+                                <button type="submit" name="submit" id="submit" class="btn"><img
+                                        src="assets/icons/icon_arrow_forward.svg" alt="">Générer le contrat</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </form>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTERS -->
+
+{% include "_partials/_footer.html" %}

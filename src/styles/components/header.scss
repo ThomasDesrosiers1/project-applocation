@@ -1,0 +1,32 @@
+header {
+    height: 100px;
+    background-color: $color-grey-light;
+    z-index: 500;
+    position: relative;
+
+    .wrapper {
+        height: 100%;
+        @extend .flex;
+        @extend .items-center;
+
+        .logo {
+            @extend .flex;
+            @extend .items-center;
+            gap: $ratio4;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: $font-size-32;
+            letter-spacing: 2px;
+            color: $color-primary;
+            transition: all 0.6s ease;
+
+            img {
+                height: 50px;
+            }
+
+            &:hover {
+                letter-spacing: 4px;
+            }
+        }
+    }
+}

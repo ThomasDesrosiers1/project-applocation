@@ -1,0 +1,369 @@
+/*******************************************************************************
+* COMMON TO ALL PAGES
+*/
+
+.box-shadow {
+    box-shadow: 3px 3px 6px #00000029;
+}
+
+.double-shadow {
+    box-shadow: -3px -3px 6px #fff, 3px 3px 6px #00000029;
+}
+
+.title_wrapper {
+    width: 100%;
+    @extend .flex;
+    @extend .justify-center;
+
+    &.vert {
+        @extend .flex-column;
+        @extend .items-center;
+        gap: $ratio2;
+    }
+}
+
+.tag {
+    padding: $ratio2;
+    background-color: $color-secondary-light;
+    font-size: $font-size-14;
+    font-weight: 600;
+    color: $color-secondary;
+    white-space: nowrap;
+    text-align: center;
+
+    &.red {
+        color: $color-primary;
+    }
+}
+
+// =====================
+
+.section-location-form {
+    padding: $ratio8 0;
+    background-color: $color-grey-light;
+    height: auto;
+
+    h1 {
+        font-size: $font-size-30;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    h3.section {
+        padding: $ratio10 0 $ratio6 0;
+        font-size: $font-size-20;
+        font-weight: 600;
+        text-align: center;
+
+        &.small {
+            padding-bottom: $ratio2;
+        }
+    }
+
+    h4 {
+        padding-top: $ratio2;
+        font-size: $font-size-16;
+        font-weight: 400;
+        text-align: center;
+        width: 70%;
+    }
+
+    h5 {
+        padding-bottom: $ratio6;
+        font-size: 12px;
+        font-weight: 400;
+        color: $color-primary;
+        text-align: center;
+        width: 60%;
+    }
+
+    .wrapper {
+        nav.top-nav {
+            width: 100%;
+            @extend .flex;
+            @extend .justify-between;
+            @extend .items-center;
+        }
+
+        .content {
+            padding: $ratio8 0;
+
+            .packages {
+                padding-top: $ratio10;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: $ratio6;
+            }
+        }
+
+        .card {
+            padding: $ratio8;
+            @extend .flex;
+            @extend .flex-column;
+            border-radius: 6px;
+
+            .card__title {
+                .titles {
+                    @extend .flex;
+                    @extend .justify-between;
+                    @extend .items-center;
+                    gap: $ratio8;
+
+                    h3 {
+                        font-size: $font-size-18;
+                        font-weight: 700;
+                        color: $color-primary;
+                    }
+                }
+
+                .price {
+                    padding-top: $ratio8;
+                    font-size: $font-size-24;
+                    font-weight: 500;
+                    color: $color-secondary;
+                }
+            }
+
+            .card__content {
+                padding-top: $ratio4;
+                @extend .flex;
+                @extend .flex-column;
+                flex-grow: 1;
+                gap: $ratio4;
+
+                p {
+                    font-size: $font-size-14;
+                    font-weight: 400;
+                }
+
+                ul {
+                    padding-top: $ratio4;
+                    padding-left: 0;
+                    @extend .flex;
+                    @extend .flex-column;
+                    gap: $ratio2;
+                    list-style: none;
+
+                    li {
+                        @extend .flex;
+                        @extend .items-center;
+                        gap: $ratio2;
+
+                        font-size: $font-size-16;
+                        font-weight: 500;
+                        color: $color-secondary;
+                    }
+                }
+            }
+
+            .btn-wrapper {
+                margin-top: $ratio12;
+            }
+        }
+
+        .extra {
+            padding-top: $ratio4;
+
+            h1 {
+                padding-bottom: $ratio6;
+            }
+        }
+
+        .bottom-section {
+            width: 100%;
+            background-color: #e9592d12;
+        }
+
+        .btn-wrapper.bottom-nav {
+            margin-top: $ratio10;
+            width: 100%;
+            @extend .flex;
+            @extend .justify-center;
+        }
+
+        @media screen and (max-width: $size-sm-max) {
+            .content {
+                .packages {
+                    grid-template-columns: 1fr;
+                }
+            }
+
+            .card {
+                .card__content {
+                    ul {
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                    }
+                }
+            }
+        }
+
+        @media screen and (max-width: 525px) {
+            .card {
+                .card__content {
+                    ul {
+                        display: grid;
+                        grid-template-columns: 1fr;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.totals {
+    padding: $ratio8;
+    position: relative;
+    z-index: 500;
+    background-color: $color-white;
+    width: 5%;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+}
+
+.estimation-infos {
+    margin-top: $ratio10;
+
+    .titles,
+    .row {
+        padding: $ratio4 $ratio8;
+        background-color: $color-secondary;
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+
+        h1.main-title {
+            width: 100%;
+            @extend .flex;
+            font-size: $font-size-26;
+            font-weight: 400;
+            color: $color-white;
+
+            &.price_title {
+                padding-left: 50%;
+            }
+        }
+    }
+
+    .row {
+        padding: $ratio8;
+        background-color: $color-grey-light;
+        border-radius: 0;
+        border-bottom: 1px solid #3247693e;
+
+        h1 {
+            font-weight: 500;
+            color: $color-secondary;
+            text-align: left;
+        }
+
+        &.no-border {
+            padding-bottom: 0;
+            border: none;
+        }
+
+        &.additionnal,
+        &.place {
+            .option {
+                @extend .flex;
+                @extend .items-center;
+                gap: $ratio2;
+
+                .option-name {
+                    font-size: $font-size-20;
+                    font-weight: 500;
+                    color: $color-secondary;
+                }
+            }
+        }
+
+        &.additionnal {
+            display: none;
+
+            &.selected {
+                display: grid;
+            }
+        }
+
+        &.total {
+            padding-top: $ratio4;
+
+            h1 {
+                font-size: $font-size-30;
+                font-weight: 700;
+            }
+        }
+
+        &.lancement {
+            padding-top: $ratio10;
+
+            h1 {
+                font-size: $font-size-30;
+            }
+        }
+
+        &.discount {
+            padding-top: 0;
+
+            .number-field {
+                @extend .justify-start;
+            }
+
+            .price {
+                padding-top: $ratio8;
+                color: $color-primary;
+            }
+        }
+
+        .change-package,
+        .modify {
+            padding: $ratio3 0 2px 0;
+            font-size: $font-size-16;
+            font-weight: 500;
+            color: $color-primary;
+            border-bottom: 1px solid transparent;
+            display: inline-block;
+            cursor: pointer;
+            transition: all 0.3s ease;
+
+            &:hover {
+                border-color: $color-primary;
+            }
+        }
+
+        .service {
+            height: 100%;
+            @extend .flex;
+            @extend .items-center;
+            font-size: $font-size-16;
+            line-height: 1.4;
+        }
+
+        .price {
+            padding-top: $ratio2;
+            padding-left: 50%;
+            font-size: $font-size-24;
+            font-weight: 500;
+            color: $color-secondary;
+
+            &.grand-total {
+                .value {
+                    font-size: $font-size-26;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+
+    .starter,
+    .popular,
+    .expert {
+        display: none;
+
+        &.selected {
+            display: grid;
+        }
+    }
+}

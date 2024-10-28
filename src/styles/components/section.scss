@@ -1,0 +1,11 @@
+.section {
+    padding: $ratio10 0;
+
+    h1,
+    h2,
+    h3 {
+        padding-bottom: $ratio8;
+        font-weight: 500;
+        letter-spacing: 4px;
+    }
+}

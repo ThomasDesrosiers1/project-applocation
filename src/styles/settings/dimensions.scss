@@ -1,0 +1,35 @@
+/* ==========================================================================
+   DIMENSIONS / SETTINGS
+   ========================================================================== */
+
+// Valeurs utilisées pour les médias query
+$size-xs-max: 767px;
+$size-sm-min: 768px;
+$size-sm-max: 990px;
+$size-md-min: 991px;
+$size-md-mid: 1023px;
+$size-md-max: 1299px;
+$size-lg-min: 1300px;
+$size-lg-max: 1920px;
+
+$size-nav-shift-breakpoint: $size-md-max; // change height
+$size-nav-toggle-breakpoint: $size-sm-max; // show mobile menu
+
+$size-slider-breakpoint: 480px;
+
+$ratio1: 0.25rem; // 4px
+$ratio2: 0.5rem; // 8px
+$ratio3: 0.75rem; // 12px
+$ratio4: 1rem; // 16px
+$ratio5: 1.25rem; // 20px
+$ratio6: 1.5rem; // 24px
+$ratio7: 1.75rem; // 28px
+$ratio8: 2rem; // 32px
+$ratio9: 2.5rem; // 36px
+$ratio10: 3rem; // 48px
+$ratio11: 3.5rem; // 56px
+$ratio12: 4rem; // 64px
+$ratio13: 4.5rem; // 72px
+$ratio14: 5rem; // 80px
+$ratio15: 5.5rem; // 88px
+$ratio16: 6rem; // 96px
